@@ -184,6 +184,26 @@ main{
     transition: transform 0.6s ease;
 }
 
+.foto-cliente{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.foto-cliente > p{
+    font-size: 28px;
+}
+
+.foto-de-perfil{
+    background-color: rgb(231, 231, 231);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--cor-bordas);
+}
+
 .cliente{
     flex: 0 0 100%;
     border: 3px solid var(--cor-bordas);
