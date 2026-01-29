@@ -17,9 +17,13 @@
     --cor-preta: black;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px ;
+}
+
 body{
     background-image: url('../imagens/fundo-imagem.jpg');
-
     
 }
 
@@ -42,11 +46,14 @@ body::before{
 
 header{
     background-color: var(--cor-fundo-dark);
+    position: sticky;
+    top: 0;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    z-index: 1;
 }
 h1{
     font-size: 40px;
@@ -54,10 +61,29 @@ h1{
     color: var(--cor-h1);
 }
 
-header > ul{
-    gap: 8px;
-    display: flex;
+#hamburguer{
+    color: white;
+    font-size: 2em ;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+}
 
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+header > nav > ul{
+    gap: 8px;
+    display: none;
+    flex-direction: row;
+}
+
+header > nav > ul > li > a > i{
+    font-size: 25px;
+    padding: 5px;
 }
 
 a{
@@ -142,7 +168,6 @@ main{
     grid-row-end: 3;
     border-radius: 5px;
     overflow: hidden;
-    width: 100%;
 }
 
 #prova > h4{
@@ -211,6 +236,7 @@ main{
 
 
 footer{
+    z-index: 1;
     padding: 15px;
     background-color: var(--cor-fundo-dark);
     color: var(--cor-branca);
