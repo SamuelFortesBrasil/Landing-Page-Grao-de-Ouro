@@ -4,8 +4,8 @@
         scroll-padding-top: 132px ;
     }
 
-    #container-cliente{
-        font-size: 15px;
+    #prova > h4{
+        font-size: 22px;
     }
 
     .foto-cliente{
@@ -42,4 +42,188 @@
         gap: 5px;
         flex-direction: column;
     }
+}
+
+@media screen and (min-width: 700px) {
+    html{
+        scroll-padding-top: 145px;
+    }
+
+   header > h1{
+        font-size: 70px;
+        -webkit-text-stroke-width: 1.4px;
+        -webkit-text-stroke-color: white;
+    }
+
+    header > nav > ul > li > a > i{
+        font-size: 30px;
+        transition: color 0.5s ease;
+    }
+
+     header > nav > ul > li > a > i:hover{
+        color: #E6B115;
+    }
+
+    #tipos{
+        border-radius: 5px;
+    }
+
+    #tipos > h3{
+        font-size: 30px;
+    }
+
+    #tipos > div > h4{
+        font-size: 25px;
+    }
+
+    .tipos-cafe{
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+
+    }
+
+    .tipos-cafe > button{
+        max-width: 50%;
+    }
+
+    .tipos-cafe > img{
+        max-width: 300px;
+    }
+
+    #prova > h4{
+        font-size: 25px;
+    }
+
+    #comprar{
+        border-radius: 5px;
+    }
+
+    #comprar > h3{
+        font-size: 25px;
+    }
+
+    #comprar > p{
+        font-size: 20px;
+    }
+
+    #whatsapp-para-compra{
+        text-align: center;
+        font-size: 20px;
+        box-shadow: 1px 1px 5px black;
+        width: 80%;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+
+    footer > div > h4{
+        font-size: 30px;
+    }
+
+   footer > p > a > i{
+        font-size: 25px;
+    }
+
+    input[type = "email"]{
+        height: 30px;
+        border-radius: 8px;
+        width: 60%;
+    }
+
+    input[type = "submit"]{
+        width: 30%;
+        box-shadow: 1px 1px 5px rgba(31, 31, 31, 0.705);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #hamburguer{
+        display: none;
+    }
+
+    #menu-container{
+        display: flex;
+    }
+
+    #menu-container > li{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    main{
+        grid-template-columns: 25px 1fr 2fr 1fr 25px;
+    }
+
+    #historia{
+        grid-row-start: 1 ;
+        grid-row-end: 2;
+        grid-column-end: 4;
+
+    }
+
+    #historia > img{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        border: 1px solid #8F291A;
+        border-radius: 2px;
+        width: 95%;
+        height: 600px;
+    }
+
+    #tipos{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1 ;
+        grid-row-end: 3;
+    }
+
+    .tipos-cafe > img{
+        display: none;
+    }
+
+    #FAQ{
+        display: flex;
+        grid-column-start: 3;
+        grid-column-end: 4 ;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #download{
+        display: flex;
+        grid-column-start: 2;
+        grid-column-end: 3 ;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #prova{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 3 ;
+        grid-row-end: 3;
+    }
+
+    #comprar{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4 ;
+        grid-row-end: 5;
+    }
+
+    input[type = "email"]{
+        width: 30%;
+    }
+
+    input[type = "submit"]{
+        width: 20%;
+    }
+
 }

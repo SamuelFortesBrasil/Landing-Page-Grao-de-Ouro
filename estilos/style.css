@@ -92,7 +92,7 @@ a{
 }
 main{
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 25px 90vw 25px;
 
 }
@@ -113,6 +113,10 @@ main{
 #historia > h2{
     font-family: 'Playfair Display',serif;
     color: var(--cor-titulos);
+}
+
+#historia > img{
+    display: none;
 }
 
 #tipos{
@@ -137,6 +141,7 @@ main{
     margin: 5px;
     padding: 5px;
     border: 2px solid var(--cor-bordas);
+    box-shadow: 1px 1px 10px rgba(51, 51, 51, 0.795);
     transition: background-color 1s ease;
 }
 
@@ -150,12 +155,66 @@ main{
     border-radius: 5px;
     border: 3px solid var(--cor-bordas);
     max-width: 100%;
+    box-shadow: 1px 1px 5px rgba(37, 37, 37, 0.856);
     height: auto;
     display: block;
 }
 
 .tipos-cafe:hover{
     background-color: var(--cor-branca);
+}
+
+#FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--cor-fundo);
+    border: 3px solid var(--cor-bordas);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5 ;
+}
+
+#FAQ > h3{
+    font-size: 30px;
+    color: var(--cor-titulos);
+}
+
+#FAQ > .bt-aux{
+    width: 70%;
+}
+
+.bt-aux{
+    text-align: center;
+    background-color: var(--cor-h1);
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(34, 34, 34, 0.897);
+    color: var(--cor-titulos);
+    padding: 15px;
+    margin: 5px;
+    transition:padding 0.3s, background-color 0.3s,margin 0.3s ease;
+}
+
+.bt-aux:hover{
+    background-color: #c79a14 ;
+    padding: 18px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+#download{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--cor-fundo);
+    border: 3px solid var(--cor-bordas);
 }
 
 #prova{
