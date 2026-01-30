@@ -13,17 +13,17 @@ btFechar.addEventListener('click',()=>{
 })
 
 btVerMais1.addEventListener('click',()=>{
-    imagem.src = '/imagens/Tabela-grãos.png'
+    imagem.src = 'imagens/tabela-graos.png'
     PopUpContainer.style.display = 'flex'
 })
 
 btVerMais2.addEventListener('click',()=>{
-    imagem.src = '/imagens/tabela-moido.jpg'
+    imagem.src = 'imagens/tabela-moido.jpg'
     PopUpContainer.style.display = 'flex'
 })
 
 btVerMais3.addEventListener('click',()=>{
-    imagem.src = '/imagens/tabela-capsulas.jpg'
+    imagem.src = 'imagens/tabela-capsulas.jpg'
     PopUpContainer.style.display = 'flex'
 })
 
