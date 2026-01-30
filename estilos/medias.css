@@ -1,0 +1,45 @@
+@media  screen and (max-width: 576px ) {
+
+    html{
+        scroll-padding-top: 132px ;
+    }
+
+    #container-cliente{
+        font-size: 15px;
+    }
+
+    .foto-cliente{
+        gap: 8px;
+    }
+
+    .foto-cliente > p{
+        font-size: 20px;
+    }
+
+    .foto-de-perfil{
+        height: 58px;
+    }
+
+    #whatsapp-para-compra{
+        text-align: center;
+    }
+
+    #comprar > p{
+        line-height: 1.4em;
+        text-align: center;
+    }
+
+    footer{
+        line-height: 1.4em;
+    }
+
+    footer > p > a > i{
+         font-size: 17px;
+    }
+    
+    footer > div > form{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+}

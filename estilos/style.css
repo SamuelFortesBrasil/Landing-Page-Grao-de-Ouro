@@ -210,7 +210,6 @@ main{
     border-radius: 5px;
     text-align: justify;
     padding: 15px;
-    transition: transform 0.6s ease;
     background-color: var(--cor-fundo);
 
 }
